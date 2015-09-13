@@ -33,7 +33,7 @@ def share_post(content):
     title = article_title(content)
     url = article_url(content)
 
-    tweet = ('%s%s%s' % (title, quote(' '), url)).encode('utf-8')
+    tweet = '%s%s%s' % (title, quote(' '), url)
     diaspora_link = 'https://sharetodiaspora.github.io/?title=%s&url=%s' % (title, url)
     facebook_link = 'http://www.facebook.com/sharer/sharer.php?s=100&amp;p%%5Burl%%5D=%s' % url
     gplus_link = 'https://plus.google.com/share?url=%s' % url
